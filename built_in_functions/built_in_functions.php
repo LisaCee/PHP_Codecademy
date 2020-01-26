@@ -72,4 +72,24 @@ $d = "*~*";
 // Write your code below:
 echo str_pad($b, $a ,$d, $c);
 
+<?php
+namespace Codecademy;
 
+// Write your code below:
+function convertToShout($str) {
+  return strtoupper($str) . "!";
+}
+
+echo convertToShout("woah there, buddy");
+
+function tipGenerously($cost) {
+  return ceil($cost + $cost * 0.2);
+}
+
+echo tipGenerously(100.00);
+
+function calculateCircleArea($diameter) {
+  return pi()/4 * pow($diameter, 2) ;
+}
+echo "\n";
+echo calculateCircleArea(25);
