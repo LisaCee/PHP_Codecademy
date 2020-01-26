@@ -50,3 +50,13 @@ function calculateTip($cost) {
 }
 
 echo calculateTip(100);
+
+<?php
+namespace Codecademy;
+
+// Write your code below:
+echo getrandMax();
+echo "\n";
+echo rand();
+echo "\n";
+echo rand(1, 52);
