@@ -33,3 +33,20 @@ $essay_two = "Obviously this is a really good book. You obviously would not have
 echo substr_count($essay_one, "really");
 
 echo substr_count($essay_two, "obvious");
+
+<?php
+namespace Codecademy;
+
+// Write your code below:
+
+function calculateDistance($a, $b) {
+  return abs($a - $b);
+}
+
+echo calculateDistance(-1, 4);
+
+function calculateTip($cost) {
+  return round($cost + $cost * 0.18);
+}
+
+echo calculateTip(100);
