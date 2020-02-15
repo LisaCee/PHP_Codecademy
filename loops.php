@@ -1,15 +1,15 @@
 <?php
 // while
-$count = 1;
-while ($count <= 100) {
-  if ($count % 33 === 0) {
-    print $count . " is divisible by 33\n";
-    $count += 1;
-  } else {
-    $count += 1;
-  }
+// $count = 1;
+// while ($count <= 100) {
+//   if ($count % 33 === 0) {
+//     print $count . " is divisible by 33\n";
+//     $count += 1;
+//   } else {
+//     $count += 1;
+//   }
  
-}
+// }
 
 // do while
 //   $plant_height = 32;
@@ -51,17 +51,26 @@ while ($count <= 100) {
 // }
 
 // break and continue
-  for ($i = 10; $i >= 0; $i--) {
-    if ($i === 2) {
-      echo "Ready!\n";
-    } elseif ($i === 1) {
-      echo "Set!\n";
-      break;
-    } elseif ($i === 0) {
-      echo "Go!\n";
-    } elseif ($i === 6) {
-      continue;
-    } else {
-      echo $i . "\n";
-    }
-  }
+  // for ($i = 10; $i >= 0; $i--) {
+  //   if ($i === 2) {
+  //     echo "Ready!\n";
+  //   } elseif ($i === 1) {
+  //     echo "Set!\n";
+  //     break;
+  //   } elseif ($i === 0) {
+  //     echo "Go!\n";
+  //   } elseif ($i === 6) {
+  //     continue;
+  //   } else {
+  //     echo $i . "\n";
+  //   }
+  // }
+
+// html loops
+<h1>Only Shoes Shoe Shop</h1>
+<?php
+for ($i = 0; $i < 5; $i++):
+?>
+<p>We sell shoes</p>
+<?php endfor;
+?>
