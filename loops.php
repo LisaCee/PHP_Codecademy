@@ -67,10 +67,30 @@
   // }
 
 // html loops
+// <h1>Only Shoes Shoe Shop</h1>
+// <?php
+// for ($i = 0; $i < 5; $i++):
+// ?>
+// <p>We sell shoes</p>
+// <?php endfor;
+// ?>
+
+// end foreach and while
 <h1>Only Shoes Shoe Shop</h1>
 <?php
-for ($i = 0; $i < 5; $i++):
+$i = 0;
+$repeats = [0, 1];
+while ($i < 5):
 ?>
 <p>We sell shoes</p>
-<?php endfor;
+  <?php
+  foreach ($repeats as $value):
+  ?>
+  <p>(only shoes)</p>
+  <?php
+    endforeach;
+  ?>
+<?php
+  $i++;
+  endwhile;
 ?>
