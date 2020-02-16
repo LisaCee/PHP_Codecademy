@@ -70,14 +70,14 @@
 // <h1>Only Shoes Shoe Shop</h1>
 // <?php
 // for ($i = 0; $i < 5; $i++):
-// ?>
+
 // <p>We sell shoes</p>
 // <?php endfor;
-// ?>
+
 
 // end foreach and while
-<h1>Only Shoes Shoe Shop</h1>
-<?php
+// <h1>Only Shoes Shoe Shop</h1>
+
 $i = 0;
 $repeats = [0, 1];
 while ($i < 5):
