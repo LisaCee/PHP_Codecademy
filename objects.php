@@ -64,7 +64,7 @@ class Milk extends Beverage {
   }
 }
 
-<?php
+// <?php
 class Beverage {
   public $temperature;
   
@@ -84,3 +84,22 @@ class Milk extends Beverage {
 
 $chocolate = new Milk();
 echo $chocolate->getInfo();
+
+// <?php
+class Beverage {
+  private $temperature, $color;
+  public $opacity;
+  function __construct($temperature, $color) {
+    $this->temperature = $temperature;
+    $this->color = $color;
+  }
+  function getInfo() {
+    return "This beverage is $this->temperature and $this->color.";
+  }
+}
+class Milk extends Beverage {
+  function setOpacity($opacity) {
+    $this->opacity = $opacity;
+  }
+}
+
