@@ -4,7 +4,7 @@ class Beverage {
   public $color, $opacity, $temperature;
 };
 
-<?php
+// <?php
 class Beverage {
   public $temperature, $color, $opacity;
 }
@@ -15,7 +15,7 @@ $tea->temperature = "hot";
 
 echo $tea->temperature;
 
-<?php
+// <?php
 class Beverage {
   public $temperature, $color, $opacity;
   function getInfo() {
@@ -29,7 +29,7 @@ $soda->temperature = "cold";
 
 echo $soda->getInfo();
 
-<?php
+// <?php
 class Beverage {
   public $temperature, $color, $opacity;
   function __construct($temperature, $color){
@@ -49,7 +49,7 @@ $water->color = "black";
 
 echo $water->getInfo();
 
-<?php
+// <?php
 class Beverage {
   public $temperature;
   
@@ -64,4 +64,23 @@ class Milk extends Beverage {
   }
 }
 
+<?php
+class Beverage {
+  public $temperature;
+  
+  function getInfo() {
+    return "This beverage is $this->temperature.";
+  }
+}
 
+class Milk extends Beverage {
+  function __construct() {
+    $this->temperature = "cold";
+  }
+  function getInfo(){
+    return parent::getInfo() . " I like my milk this way.";
+  }
+}
+
+$chocolate = new Milk();
+echo $chocolate->getInfo();
